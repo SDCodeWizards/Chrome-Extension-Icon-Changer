@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "My Extension",
-  "description": "Starter template built with ExtensionKit.io",
+  "name": "Icon-changer",
+  "description": "Changes other tabs on your chrome tabs. swap them to however you'd like",
+  "permission": ["tabs", "storage", "activeTab"],
   "version": "1.0.0",
   "icons": {
     "128": "icons/icon.png"
@@ -11,7 +12,7 @@
       "32": "icons/icon.png"
     },
     "default_popup": "index.html",
-    "default_title": "Open Popup"
+    "default_title": "IDK..."
   },
   "commands": {
     "_execute_browser_action": {
@@ -22,4 +23,5 @@
       "description": "Toggle Popup"
     }
   }
+
 }
