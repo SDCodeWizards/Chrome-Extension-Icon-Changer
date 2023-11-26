@@ -2,8 +2,14 @@
   "manifest_version": 3,
   "name": "Icon-changer",
   "description": "Changes other tabs on your chrome tabs. swap them to however you'd like",
-  "permission": ["tabs", "storage", "activeTab"],
+  "permission": ["tabs", "storage", "activeTab","scripting"],
   "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ],  
   "icons": {
     "128": "icons/icon.png"
   },
